@@ -5,10 +5,12 @@ Exploring sequelize with typescript and express,
 1. Make sure you have .env file in your root directory
 
 # .env file 
+```
 PORT=8000
 DATABASE_NAME=sequelize_ts (table should be in your database)
 DATABASE_PASS=password
 DATABASE_USER=postgres
+```
 
 2. make sure you have pm2 installed
 ```shell
