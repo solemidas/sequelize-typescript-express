@@ -1,0 +1,42 @@
+{
+  "name": "sequelize-typescript-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ecosystem.config.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "export `cat .env` && pm2 start ecosystem.config.js",
+    "start:dev": "export `cat .env` && pm2 start --no-daemon ecosystem.config.js",
+    "restart": "export `cat .env` && pm2 restart ecosystem.config.js",
+    "stop": "pm2 stop ecosystem.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solemidas/sequelize-typescript-express.git"
+  },
+  "keywords": [
+    "express",
+    "sequelize",
+    "typescript"
+  ],
+  "author": "Lebogang Midas <solemidas@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/solemidas/sequelize-typescript-express/issues"
+  },
+  "homepage": "https://github.com/solemidas/sequelize-typescript-express#readme",
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "express": "~4.16.2",
+    "pg": "~7.4.0",
+    "pg-hstore": "~2.3.2",
+    "pm2": "~2.7.2",
+    "sequelize": "~4.22.6",
+    "typescript": "~2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "~8.0.51",
+    "@types/sequelize": "~4.0.79",
+    "tslint-config-airbnb": "~5.3.1"
+  }
+}
